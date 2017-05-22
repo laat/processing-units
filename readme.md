@@ -12,7 +12,7 @@ accessible, then print the number of processors installed.
 
 ## Install
 ```
-npm install -D processing-units
+npm install processing-units
 ```
 
 ## Usage
