@@ -1,0 +1,33 @@
+{
+  "name": "processing-units",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "laat/processing-units",
+  "author": {
+    "name": "Sigurd Fosseng",
+    "email": "sigurd@fosseng.net",
+    "url": "laat.io"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "nproc",
+    "processors",
+    "processing",
+    "units"
+  ],
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^20.0.3"
+  }
+}
