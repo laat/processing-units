@@ -10,12 +10,25 @@ Get the number of processing units available to the current process, which may
 be less than the number of online processors. If this information is not
 accessible, then print the number of processors installed.
 
+## Install
+```
+npm install -D processing-units
+```
+
+## Usage
+
+```js
+const processingUnits = require('processing-units');
+
+processingUnits(); // => 4
+```
+
 ## Motivation
 
 When running a docker container with fewer cpus than the host, os.cpus().length
 returns the number of processors on the host.
 
-```sh
+```
 $ docker run -it \
 >   --cpuset-cpus="0-1" \
 >   node \
@@ -34,19 +47,6 @@ $ docker run -it \
 ```
 
 This is an abstraction.
-
-## Install
-```
-npm install -D processing-units
-```
-
-## Usage
-
-```js
-const processingUnits = require('processing-units');
-
-processingUnits(); // => 4
-```
 
 ## Behind the scenes
 
