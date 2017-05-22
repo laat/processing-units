@@ -1,7 +1,7 @@
 {
   "name": "processing-units",
   "version": "0.0.0",
-  "description": "",
+  "description": "Get the number of processing units available",
   "license": "MIT",
   "repository": "laat/processing-units",
   "author": {
