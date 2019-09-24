@@ -4,7 +4,7 @@ const nproc = require('.');
 it('when nproc works', () => {
   const childProcess = {
     spawnSync: () => ({
-      stdout: new Buffer('5\n'),
+      stdout: Buffer.from('5\n'),
     }),
   };
   expect(nproc(childProcess)).toBe(5);
